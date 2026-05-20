@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vimal M – Data Analyst specializing in SQL, BI tools, and cloud data platforms." />
+  <title>Vimal M | Data Analyst</title>
+
+  <!-- Fonts: Syne (display) + Outfit (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons (lightweight SVG icon library) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== BACKGROUND CANVAS ===================== -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-vm">MV</span><span class="logo-mv">MV</span><span class="accent">.</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="assets/Vimal_M_Resume.pdf" class="btn btn-outline" download>
+        <i data-lucide="download" class="btn-icon"></i> Resume
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+<div class="hero-inner container">
+  <!-- LEFT: Text -->
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal">Based in Coimbatore, Tamil Nadu</p>
+    <h1 class="hero-name reveal delay-1">Vimal M</h1>
+    <p class="hero-role reveal delay-2">
+      I'm a <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+    </p>
+    <p class="hero-tagline reveal delay-3">
+      Turning raw data into clear decisions — through dashboards, pipelines, and analytical thinking.
+    </p>
+    <div class="hero-actions reveal delay-4">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- RIGHT: Photo -->
+  <div class="hero-photo-col reveal delay-2">
+    <div class="hero-photo-wrap" id="hero-photo">
+      <img src="assets/profile.jpg" alt="Vimal M" class="hero-photo" />
+      <div class="hero-photo-glow"></div>
+    </div>
+  </div>
+</div>
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 / About</span>
+          <h2 class="section-title">Behind the data</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal delay-1">
+            <p>
+              I don't just work with data — I find the signal in the noise. With over two years of hands-on experience in analytics, I've learned that the best dashboards are the ones that make a decision obvious within five seconds of looking at them.
+            </p>
+            <p>
+              My work spans SQL engineering, cloud data platforms, and BI tools like Power BI, Tableau, and AWS QuickSight. I've built reporting systems from the ground up, migrated enterprise-scale pipelines, and translated messy, siloed data into clean, stakeholder-ready insights.
+            </p>
+            <p>
+              I care about the craft: optimized queries, reliable data models, and dashboards that actually get used. If a report doesn't drive a decision, it isn't useful — that's the standard I hold myself to.
+            </p>
+          </div>
+          <div class="about-stats reveal delay-2">
+            <div class="stat-card glass">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Dashboards Built</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number">30%</span>
+              <span class="stat-label">Reporting Efficiency Gain</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 / Skills</span>
+          <h2 class="section-title">Technical toolkit</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card glass reveal delay-1">
+            <div class="skill-card-icon">
+              <i data-lucide="database"></i>
+            </div>
+            <h3>Data Analytics</h3>
+            <ul class="skill-list">
+              <li><span class="pill">SQL (Advanced)</span></li>
+              <li><span class="pill">Data Analysis</span></li>
+              <li><span class="pill">Data Cleaning</span></li>
+              <li><span class="pill">Data Transformation</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal delay-2">
+            <div class="skill-card-icon">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <h3>BI Tools</h3>
+            <ul class="skill-list">
+              <li><span class="pill">Power BI</span></li>
+              <li><span class="pill">Tableau</span></li>
+              <li><span class="pill">AWS QuickSight</span></li>
+              <li><span class="pill">Looker</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal delay-3">
+            <div class="skill-card-icon">
+              <i data-lucide="workflow"></i>
+            </div>
+            <h3>Data Engineering</h3>
+            <ul class="skill-list">
+              <li><span class="pill">ETL Pipelines</span></li>
+              <li><span class="pill">Data Warehousing</span></li>
+              <li><span class="pill">Data Modeling</span></li>
+              <li><span class="pill">Data Integration</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal delay-1">
+            <div class="skill-card-icon">
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3>Cloud Platforms</h3>
+            <ul class="skill-list">
+              <li><span class="pill">AWS Redshift</span></li>
+              <li><span class="pill">Databricks</span></li>
+              <li><span class="pill">Microsoft Fabric</span></li>
+              <li><span class="pill">GCP</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card glass reveal delay-2">
+            <div class="skill-card-icon">
+              <i data-lucide="wrench"></i>
+            </div>
+            <h3>Tools</h3>
+            <ul class="skill-list">
+              <li><span class="pill">Excel</span></li>
+              <li><span class="pill">PowerPoint</span></li>
+              <li><span class="pill">AWS S3 &amp; Athena</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 / Projects</span>
+          <h2 class="section-title">Selected work</h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card glass reveal delay-1">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-visual-inner p1">
+                <div class="dash-bar"></div>
+                <div class="dash-bar"></div>
+                <div class="dash-bar"></div>
+                <div class="dash-line"></div>
+                <div class="dash-kpi">
+                  <span>KPIs</span><span>30+</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Migration</span>
+                <span class="project-tag">BI</span>
+              </div>
+              <h3>Amazon CPS — Dashboard Migration</h3>
+              <p>Migrated 30+ enterprise dashboards from Tableau to AWS QuickSight, rebuilt SQL logic and calculated fields, and ensured KPI consistency across all reporting surfaces.</p>
+              <div class="project-tools">
+                <span>AWS QuickSight</span>
+                <span>Tableau</span>
+                <span>SQL</span>
+                <span>Redshift</span>
+              </div>
+              <div class="project-impact">
+                <i data-lucide="trending-up"></i>
+                <span>Improved dashboard performance and achieved full KPI consistency across enterprise reporting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass reveal delay-2">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-visual-inner p2">
+                <div class="dash-pipeline">
+                  <div class="pipe-node"></div>
+                  <div class="pipe-line"></div>
+                  <div class="pipe-node"></div>
+                  <div class="pipe-line"></div>
+                  <div class="pipe-node"></div>
+                </div>
+                <div class="dash-label">ETL Flow</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">ETL</span>
+                <span class="project-tag">Pipeline</span>
+              </div>
+              <h3>RaceTrac — Data Pipeline Migration</h3>
+              <p>Migrated data pipelines from Databricks to SQL Server, designed end-to-end ETL workflows, validated data integrity across systems, and optimized processing efficiency.</p>
+              <div class="project-tools">
+                <span>Databricks</span>
+                <span>SQL Server</span>
+                <span>ETL</span>
+                <span>Python</span>
+              </div>
+              <div class="project-impact">
+                <i data-lucide="trending-up"></i>
+                <span>Reduced pipeline processing time with zero data loss during full-scale migration</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass reveal delay-3">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-visual-inner p3">
+                <div class="dash-donut"></div>
+                <div class="dash-stat-row">
+                  <div class="dash-mini-bar"></div>
+                  <div class="dash-mini-bar"></div>
+                  <div class="dash-mini-bar"></div>
+                </div>
+                <div class="dash-label">Supply Chain</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Analytics</span>
+                <span class="project-tag">Supply Chain</span>
+              </div>
+              <h3>Amazon Supply Planning Analytics</h3>
+              <p>Built dashboards to analyze supply chain performance and inventory trends. Delivered operational visibility that directly supported planning decisions for Amazon's supply chain teams.</p>
+              <div class="project-tools">
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>AWS</span>
+                <span>Redshift</span>
+              </div>
+              <div class="project-impact">
+                <i data-lucide="trending-up"></i>
+                <span>Enabled faster supply planning decisions through consolidated, real-time inventory views</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 / Experience</span>
+          <h2 class="section-title">Where I've worked</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Data Analyst</h3>
+                  <p class="timeline-company">Wavicle Data Solutions</p>
+                </div>
+                <span class="timeline-date">May 2025 – Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed 50+ enterprise BI dashboards across multiple domains and client verticals</li>
+                <li>Built ETL pipelines and optimized data models for high-volume datasets</li>
+                <li>Delivered analytics solutions for global clients including Amazon and RaceTrac</li>
+                <li>Improved reporting efficiency by ~30% through workflow and query optimization</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Power BI</span><span>Tableau</span><span>AWS</span><span>SQL</span><span>Databricks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION + CERTIFICATIONS ===================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 / Education</span>
+          <h2 class="section-title">Background &amp; credentials</h2>
+        </div>
+        <div class="edu-grid">
+
+          <!-- Education -->
+          <div class="edu-card glass reveal delay-1">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div>
+              <h3>B.Sc Computer Systems and Design</h3>
+              <p class="edu-institution">PSG College of Technology</p>
+              <p class="edu-detail">CGPA: 7.85 / 10</p>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="certifications reveal delay-2">
+            <h3 class="cert-title">Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-item glass">
+                <i data-lucide="badge-check"></i>
+                <span>Databricks Data Analyst Associate</span>
+              </div>
+              <div class="cert-item glass">
+                <i data-lucide="badge-check"></i>
+                <span>Databricks Data Engineer Associate</span>
+              </div>
+              <div class="cert-item glass">
+                <i data-lucide="badge-check"></i>
+                <span>Microsoft Fabric Data Engineer Associate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <div class="achievements reveal delay-3">
+            <h3 class="cert-title">Achievements</h3>
+            <div class="cert-list">
+              <div class="cert-item glass">
+                <i data-lucide="star"></i>
+                <span>Built a final-year IoT project with SQL-based real-time data processing</span>
+              </div>
+              <div class="cert-item glass">
+                <i data-lucide="star"></i>
+                <span>Recognized for strong database design and practical implementation</span>
+              </div>
+              <div class="cert-item glass">
+                <i data-lucide="star"></i>
+                <span>Organized a college event with 400+ participants</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">06 / Contact</span>
+          <h2 class="section-title">Let's talk</h2>
+        </div>
+        <div class="contact-inner reveal delay-1">
+          <p class="contact-sub">
+            Open to full-time roles, contract projects, and interesting data challenges. Reach out — I reply fast.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:mvvimal10@gmail.com" class="contact-btn glass">
+              <i data-lucide="mail"></i>
+              <span>mvvimal10@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vimalmv" target="_blank" rel="noopener" class="contact-btn glass">
+              <i data-lucide="linkedin"></i>
+              <span>linkedin.com/in/vimalmv</span>
+            </a>
+          </div>
+          <a href="assets/Vimal_M_Resume.pdf" class="btn btn-primary resume-download" download>
+            <i data-lucide="download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">VM<span class="accent">.</span></p>
+      <p class="footer-copy">© 2025 Vimal M. Built with care.</p>
+      <div class="footer-links">
+        <a href="mailto:mvvimal10@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="https://www.linkedin.com/in/vimalmv" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
