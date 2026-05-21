@@ -15,7 +15,7 @@
   const ctx   = canvas.getContext('2d');
   let W, H, particles = [], animId;
 
-  const PARTICLE_COUNT  = 55;
+  const PARTICLE_COUNT  = 75;
   const CONNECT_DIST    = 160;
   const COLOR_PRIMARY   = 'rgba(0, 198, 255,';
   const COLOR_SECONDARY = 'rgba(0, 114, 255,';
